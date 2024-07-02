@@ -1,8 +1,9 @@
-package com.tienda.service.impl;
 
-import com.tienda.dao.CategoriaDao;
-import com.tienda.domain.Categoria;
-import com.tienda.service.CategoriaService;
+package com.tienda.tienda.service.impl;
+
+import com.tienda.tienda.dao.CategoriaDao;
+import com.tienda.tienda.domain.Categoria;
+import com.tienda.tienda.service.CategoriaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,8 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
-
-    @Autowired
+@Autowired
     private CategoriaDao categoriaDao;
 
     @Override
@@ -41,6 +41,4 @@ public class CategoriaServiceImpl implements CategoriaService {
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
     }
-    
-    
-}
+ }

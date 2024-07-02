@@ -1,35 +1,31 @@
-
-package com.tienda.domain;
-
+package com.tienda.tienda.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
 import lombok.Data;
-        
 
-@Data
+@Data //crea automáticamente los setters and getters
 @Entity
-@Table(name="categoria")
+@Table(name = "categoria")
 public class Categoria implements Serializable {
-    
-    private satic final long serialVersionUID =1L;
-    
+
+    private static final long serialVersionUID = 1L;
+
     @Id
-    @GenerateValue(strategy = generationType.IDENTITY)
-    @Column (name="id_categoria")
-    private Long idCategoria;
-    private String description;
-    private String rutaImagen;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_categoria")
+    private long idCategoria;
+    private String descripcion;
+    private String rutaImagen; //hibernate lo transforma en ruta_imagen
     private boolean activo;
-    
-    public Categoria () {
-        
+
+    public Categoria() {
     }
-    
-    public Categoria(String descripcion,String rutaImagen, boolean acttivo) {
-        this.description = descripcion;
+
+    public Categoria(String descripcion, String rutaImagen, boolean activo) {
+        this.descripcion = descripcion;
         this.rutaImagen = rutaImagen;
         this.activo = activo;
     }
-     
+
 }

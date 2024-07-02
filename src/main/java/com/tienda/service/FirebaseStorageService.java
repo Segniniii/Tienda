@@ -1,24 +1,20 @@
+package com.tienda.tienda.service;
 
-package com.tienda.service;
-
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-@Service
 public interface FirebaseStorageService {
 
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);
 
-    //El BuketName es el <id_del_proyecto> + ".appspot.com"
-    final String BucketName = “xxidProjectxx.appspot.com";
+    // El BucketName es el <id_del_proyecto> + ".appspot.com"
+    final String BucketName = "techshop-1fdae.appspot.com";
 
-    //Esta es la ruta básica zde este proyecto Techshop
+    // Esta es la ruta básica de este proyecto Techshop
     final String rutaSuperiorStorage = "techshop";
 
-    //Ubicación donde se encuentra el archivo de configuración Json
+    // Ubicación donde se encuentra el archivo de configuración Json
     final String rutaJsonFile = "firebase";
     
-    //El nombre del archivo Json
-    final String archivoJsonFile = “techshop-6a79f-firebase-adminsdk-5go8s-0b4639fe6c.json";
+    // El nombre del archivo Json
+    final String archivoJsonFile = "techshop-1fdae-firebase-adminsdk-cxmxj-1683f11266.json";
 }
-   
