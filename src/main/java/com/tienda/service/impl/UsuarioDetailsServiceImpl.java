@@ -1,10 +1,9 @@
+package com.tienda.service.impl;
 
-package com.tienda.tienda.service.impl;
-
-import com.tienda.tienda.service.UsuarioDetailsService;
-import com.tienda.tienda.dao.UsuarioDao;
-import com.tienda.tienda.domain.Usuario;
-import com.tienda.tienda.domain.Rol;
+import com.tienda.service.UsuarioDetailsService;
+import com.tienda.dao.UsuarioDao;
+import com.tienda.domain.Usuario;
+import com.tienda.domain.Rol;
 import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +12,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 @Service("userDetailsService")
 public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDetailsService {
     @Autowired

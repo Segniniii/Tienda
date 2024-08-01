@@ -1,9 +1,9 @@
 
-package com.tienda.tienda.service.impl;
+package com.tienda.service.impl;
 
-import com.tienda.tienda.dao.CategoriaDao;
-import com.tienda.tienda.domain.Categoria;
-import com.tienda.tienda.service.CategoriaService;
+import com.tienda.dao.CategoriaDao;
+import com.tienda.domain.Categoria;
+import com.tienda.service.CategoriaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,5 +40,10 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Transactional
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
+    }
+
+    @Override
+    public List<Object[]> findCategoriasWithProductCount() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
  }

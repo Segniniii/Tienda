@@ -1,5 +1,5 @@
 
-package com.tienda.tienda.controller;
+package com.tienda.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

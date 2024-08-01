@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6“
     <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
     </head>
     <body>
-        <header th:replace="~{layout/plantilla :: header}"/>
-
-        <section th:replace="~{pruebas/fragmentos :: filtros}"/>
-          <section th:replace="~{pruebas/fragmentos :: filtroExistencias}"/>
-        <section th:replace="~{pruebas/fragmentos :: listadoProductos}"/>
-
-        <footer th:replace="~{layout/plantilla :: footer}"/>       
+        <!-- Importar los fragmentos -->
+        <div th:replace="pruebas/fragmentos :: categoriasTabs"></div>
+        <div th:replace="pruebas/fragmentos :: listadoProductos"></div>
+        <div th:replace="pruebas/fragmentos :: filtros"></div>
+        <div th:replace="pruebas/fragmentos :: filtroExistencias"></div>
+        <div th:replace="pruebas/fragmentos :: filtroEstado"></div>
     </body>
 </html>

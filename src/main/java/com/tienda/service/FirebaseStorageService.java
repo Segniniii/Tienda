@@ -1,4 +1,4 @@
-package com.tienda.tienda.service;
+package com.tienda.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

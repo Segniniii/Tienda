@@ -1,11 +1,11 @@
 
-package com.tienda.tienda.controller;
+package com.tienda.controller;
 
-import com.tienda.tienda.domain.Categoria;
-import com.tienda.tienda.domain.Producto;
-import com.tienda.tienda.service.CategoriaService;
-import com.tienda.tienda.service.ProductoService;
-import com.tienda.tienda.service.impl.FirebaseStorageServiceImpl;
+import com.tienda.domain.Categoria;
+import com.tienda.domain.Producto;
+import com.tienda.service.CategoriaService;
+import com.tienda.service.ProductoService;
+import com.tienda.service.impl.FirebaseStorageServiceImpl;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 
-package com.tienda.tienda.service;
+package com.tienda.service;
 
-import com.tienda.tienda.domain.Categoria;
+import com.tienda.domain.Categoria;
 import java.util.List;
 
 
@@ -19,4 +19,6 @@ public interface CategoriaService {
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
     
+    public List<Object[]> findCategoriasWithProductCount();
+
 }
